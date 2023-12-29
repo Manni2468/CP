@@ -1,26 +1,19 @@
-#include <stdio.h>
-#include <string.h>
- 
-int pal()
-{
-    char str[] = { "abbba" };
- 
-    // Start from first and
-    // last character of str
-    int l = 0;
-    int h = strlen(str) - 1;
- 
-    // Keep comparing characters
-    // while they are same
-    while (h > l) {
-        if (str[l++] != str[h--]) {
-            printf("%s is not a palindrome\n", str);
-            return 0;
-            // will return from here
-        }
-    }
- 
-    printf("%s is a palindrome\n", str);
- 
-    return 0;
-}
+#include<stdio.h>  
+int pal()    
+{    
+int n,r,sum=0,temp;    
+printf("enter the number=");    
+scanf("%d",&n);    
+temp=n;    
+while(n>0)    
+{    
+r=n%10;    
+sum=(sum*10)+r;    
+n=n/10;    
+}    
+if(temp==sum)    
+printf("palindrome number ");    
+else    
+printf("not palindrome");   
+return 0;  
+}   
