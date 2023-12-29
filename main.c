@@ -1,5 +1,5 @@
 main () {
 biggest();
 fact();
-rev()
+rev();
 }
