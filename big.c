@@ -8,7 +8,7 @@ int big2(int a, int b) {
     }
 }
 
-int main() {
+int biggest() {
     int a, b;
 
     printf("Enter first number: ");
