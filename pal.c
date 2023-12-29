@@ -1,38 +1,22 @@
 #include <stdio.h>
-#include <string.h>
-
-// Function to check if a string is a palindrome or not
-int isPalindrome(char str[], int length) {
-    int start = 0;
-    int end = length - 1;
-
-    while (start < end) {
-        if (str[start] != str[end]) {
-            return 0;
-        }
-        start++;
-        end--;
-    }
-
-    return 1;
-}
-
 int pal() {
-    char str[100];
+  int n, reversed = 0, remainder, original;
+    printf("Enter an integer: ");
+    scanf("%d", &n);
+    original = n;
 
-    printf("Enter a string: ");
-    fgets(str, sizeof(str), stdin);
-
-    // Remove newline character from the string
-    str[strcspn(str, "\n")] = '\0';
-
-    int length = strlen(str);
-
-    if (isPalindrome(str, length)) {
-        printf("The string is a palindrome.\n");
-    } else {
-        printf("The string is not a palindrome.\n");
+    // reversed integer is stored in reversed variable
+    while (n != 0) {
+        remainder = n % 10;
+        reversed = reversed * 10 + remainder;
+        n /= 10;
     }
+
+    // palindrome if orignal and reversed are equal
+    if (original == reversed)
+        printf("%d is a palindrome.", original);
+    else
+        printf("%d is not a palindrome.", original);
 
     return 0;
 }
