@@ -6,4 +6,5 @@ pal();
 big3();
 sum();
 fib();
+sort();
 }
