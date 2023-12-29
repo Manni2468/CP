@@ -21,8 +21,7 @@ int fib() {
         first = second;
         second = next;
         printf("%d, ", next);
-	printf("\n\n");
     }
-
+	printf("\n\n");
     return 0;
 }
