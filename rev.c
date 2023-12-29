@@ -22,7 +22,7 @@ int rev() {
 
     reverse(str);
 
-    printf("Reversed string is: %s\n", str);
+    printf("Reversed string is: %s\n\n", str);
 
     return 0;
 }

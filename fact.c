@@ -11,6 +11,6 @@ int fact() {
     int num;
     printf("Enter a positive integer: ");
     scanf("%d", &num);
-    printf("Factorial of %d = %lld", num, factorial(num));
+    printf("Factorial of %d = %lld\n\n", num, factorial(num));
     return 0;
 }

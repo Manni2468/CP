@@ -18,7 +18,7 @@ int biggest() {
     scanf("%d", &b);
 
     int biggest = big2(a, b);
-    printf("The biggest number is: %d\n", biggest);
+    printf("The biggest number is: %d\n\n", biggest);
 
     return 0;
 }
