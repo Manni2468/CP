@@ -5,4 +5,5 @@ rev();
 pal();
 big3();
 sum();
+fib();
 }
